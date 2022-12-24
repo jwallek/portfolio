@@ -18,11 +18,18 @@
     margin-right: 3rem;
     margin-top: 2rem;
 }
-.header-resume > button{
+.header-resume{
     height: 40px;
     width: 115px;
     border: 1px solid #B721FF;
     border-radius: 8px;
     background: none;
+}
+.header-resume > a {
+    color: #B721FF;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.header-resume:hover a {
     color: #B721FF;
 }
