@@ -47,7 +47,7 @@ function Projects() {
         </div>
         <div className="project" data-aos="flip-up" data-aos-duration="1500">
           <div className="project-top">
-            <div className="project-top-logo">😋</div>
+            <div className="project-top-logo">🍔</div>
             <div className="project-top-title">
               <span>Recipes App</span> 
               <div className="project-links">
