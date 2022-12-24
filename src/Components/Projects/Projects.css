@@ -1,0 +1,143 @@
+.projects-container{
+    width: 75vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    
+}
+.projects-container::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    filter: blur(50px);
+    z-index: -1;
+    border-radius: 10px;
+}
+.projects-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    border: double 3px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#212121,#212121), radial-gradient(circle at top left, #21D4FD, #B721FF);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    padding: 25px;
+    
+}
+.project{
+    width: 90%;
+    min-height: 7rem;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.25rem;
+    
+}
+.project-top{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+ .project-bottom{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+
+}
+
+.project-top-logo{
+    width: 10%;
+    height: 100%;
+    
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(50%) translateX(-25%);
+}
+.project-top-title{
+    width: 90%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    font-size: 20px;
+}
+.project-bottom-description{
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+.project-links{
+    width: 175px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    font-size: 16px;
+}
+.project:nth-child(2),
+.project:nth-child(3),
+.project:nth-child(4),
+.project:nth-child(5){
+    border-top: 1px solid #B721FF;
+}
+.project-link{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #21D4FD;
+}
+
+.project-link:hover{
+    color: #B721FF;
+}
+
+@media screen and (max-width: 800px){
+    .project-top-logo{
+        position: absolute;
+        left: 0;
+        top: 1rem;
+        transform: none;
+    }
+    .project-top{
+        height: 10vh;
+    }
+    .project-top-title{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .project-bottom-description{
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,32 @@
+.home-container{
+    width: 100vw;
+    height: 80vh;
+    color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.home-title{
+    font-size: 50px;
+    letter-spacing: 7px;
+}
+.home-hr{
+    height: 2px;
+    width: 25%;
+    border: none;
+    background: linear-gradient(45deg, #21D4FD, #B721FF);
+}
+.home-links{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.home-link{
+    text-decoration: none;
+    color: #B721FF;
+    font-size: 18px;
+}

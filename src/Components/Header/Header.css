@@ -1,0 +1,28 @@
+.header-container{
+    width: 100vw;
+    height: 10vh;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.header-logo{
+    margin-left: 3rem;
+    color: #B721FF;
+    font-size: 24px;
+    margin-top: 2rem;
+    border-bottom: 1px solid #B721FF;
+}
+.header-resume{
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
+.header-resume > button{
+    height: 40px;
+    width: 115px;
+    border: 1px solid #B721FF;
+    border-radius: 8px;
+    background: none;
+    color: #B721FF;
+}
